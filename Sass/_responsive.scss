@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    #cabecera {
+        flex-direction: column;
+
+        #titulo {
+            h1 {
+                color: red;
+            }
+        }
+    }
+}

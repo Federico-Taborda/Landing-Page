@@ -246,4 +246,16 @@
           box-shadow: 4px 4px 4px black;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  #cabecera {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #cabecera #titulo h1 {
+    color: red;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

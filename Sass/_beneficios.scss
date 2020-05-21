@@ -1,0 +1,33 @@
+#beneficios {
+    background-color: #353b48;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: #2f3640;
+    
+    article {
+        width: 30%;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+
+        i {
+            color: #487eb0;
+            font-size: 5em;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.3em;
+        }
+
+        &:hover i {
+            transition: 0.5s;
+            color: white;
+            transform: rotate(360deg) scale(1.3);
+        }
+    }
+}
