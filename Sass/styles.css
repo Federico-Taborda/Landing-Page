@@ -101,7 +101,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 300px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 #info article {
@@ -126,8 +128,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 500px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   background-color: #2f3640;
+  padding: 40px;
 }
 
 #beneficios article {
@@ -171,7 +176,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 500px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 10px;
 }
 
 #testimonios article {
@@ -179,6 +187,7 @@
   margin: 20px;
   padding: 20px;
   width: 30%;
+  border-radius: 10px;
 }
 
 #testimonios article h1 {
@@ -253,9 +262,82 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
+  #cabecera #titulo {
+    width: 100%;
+  }
+  #cabecera #imagen {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 414px) {
+  #cabecera #imagen img {
+    width: 300px;
+  }
+  #info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #beneficios {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #beneficios article {
+    width: 100%;
+  }
+  #testimonios {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #testimonios article {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
   #cabecera #titulo h1 {
-    color: red;
+    font-size: 3.5em;
+  }
+  #cabecera #titulo h2 {
+    font-size: 1.5em;
+  }
+  #cabecera #titulo p {
+    font-size: 1.5em;
+  }
+  #cabecera #imagen img {
+    width: 220px;
+  }
+  #info article {
+    font-size: 1em;
+  }
+  #beneficios {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #beneficios article p {
+    font-size: 1em;
+  }
+  #beneficios article i {
+    font-size: 4em;
+  }
+  #testimonios article p {
+    font-size: 1em;
   }
 }
 /*# sourceMappingURL=styles.css.map */

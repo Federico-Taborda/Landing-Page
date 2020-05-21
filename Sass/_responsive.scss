@@ -1,10 +1,98 @@
 @media (max-width: 768px) {
     #cabecera {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         #titulo {
+            width: 100%;
+        }
+
+        #imagen {
+            text-align: center;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    #cabecera {
+        #imagen {
+            img {
+                width: 300px;
+            }
+        }
+    }
+
+    #info {
+        flex-direction: column;
+    }
+
+    #beneficios {
+        flex-direction: column;
+        
+        article {
+            width: 100%;
+        }
+    }
+    
+    #testimonios {
+        flex-direction: column;
+        
+        article {
+            width: 100%;
+        }
+
+    }
+}
+
+@media (max-width: 360px) {
+    #cabecera {
+        #titulo {
             h1 {
-                color: red;
+                font-size: 3.5em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1.5em;
+            }
+        }
+
+        #imagen {
+            img {
+                width: 220px;
+            }
+        }
+    }
+
+    #info {
+        article {
+            font-size: 1em;
+        }
+    }
+
+    #beneficios {
+        flex-direction: column;
+        
+        article {
+            p {
+                font-size: 1em;
+            }
+
+            i {
+                font-size: 4em;
+            }
+        }
+    }
+    
+    #testimonios {
+        article {
+            p {
+                font-size: 1em;
             }
         }
     }
